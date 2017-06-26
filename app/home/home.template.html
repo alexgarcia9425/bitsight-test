@@ -1,0 +1,27 @@
+<h3>GitHub Hottest</h3>
+
+<!-- TODO: Extract to components -->
+<div>
+	<!-- table -->
+	<github-table title="Repositories with most stars created after {{vm.todayOneMonthAgo.toLocaleString()}}">
+		<github-repository-rows repositories="vm.repositories"></github-repository-rows>
+	</github-table>
+
+	<button type="hot_repo" ng-click="vm.refreshRepositories()" class="btn btn-primary">
+	  <span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Hot Repo
+	</button>
+</div>
+<hr>
+<div>
+	<!-- table -->
+	<github-table title="Users with most followers who joined after {{vm.todayOneYearAgo.toLocaleString()}}">
+		<github-user-rows users="vm.users"></github-user-rows>
+	</github-table>
+	<!-- button -->
+	<p>
+		<button type="prolific_users" ng-click="vm.refreshUsers()" class="btn btn-primary">
+		  <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prolific Users
+		</button>
+	</p>
+</div>
+
