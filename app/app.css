@@ -1,4 +1,7 @@
 /* app css stylesheet */
+.avatar_img {
+	width: 90px;
+}
 
 .menu {
   list-style: none;
