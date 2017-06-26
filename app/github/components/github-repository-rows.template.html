@@ -1,0 +1,7 @@
+<li class="list-group-item" ng-repeat="repo in vm.repositories">
+	<img class="avatar_img" ng-src="{{repo.owner.avatar_url}}" />
+	<a href='{{repo.owner.html_url}}'>{{repo.owner.login}}</a>
+	<h4>{{repo.id}} - <a href='{{repo.html_url}}'>{{repo.name}}</a></h4>
+	<p>Stars: {{repo.stargazers_count}}</p>
+	{{repo.description}}
+</li>

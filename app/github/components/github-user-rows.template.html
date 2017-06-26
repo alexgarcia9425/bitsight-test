@@ -1,0 +1,6 @@
+<li class="list-group-item" ng-repeat="user in vm.users">
+    <img class="avatar_img" ng-src="{{user.avatar_url}}" />
+    <a href='{{repo.owner.html_url}}'>{{repo.owner.login}}</a>
+    <h4>ID: {{user.id}} - <a href='{{user.html_url}}'>{{user.login}}</a></h4>
+    <p>Followers: {{user.followers}}</p>
+</li>
