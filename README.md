@@ -1,4 +1,4 @@
-# `BitSight-test` — BitSight coding test
+# BitSight coding test
 
 This is a coding test for BitSight [AngularJS][angularjs] 
 
