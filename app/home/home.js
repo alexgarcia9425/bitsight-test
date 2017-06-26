@@ -46,7 +46,6 @@ angular.module('app.home', ['ngRoute'])
 	function refreshUsers () {
 		// search for users
 		GitAPIService.one("search/users").get({
-			access_token: '2c259912521374df4a5a28344c18b0b854331266',
 			sort: "followers",  // Order by stars
 			order: "desc",  // Decending order
 			per_page: 5,   // 5 results per page
@@ -75,7 +74,6 @@ angular.module('app.home', ['ngRoute'])
 	function refreshRepositories () {
 		// Search for reposotories
 		GitAPIService.one("search/repositories").get({
-			access_token: '2c259912521374df4a5a28344c18b0b854331266',
 			sort:"stars",  // Order by stars
 			order: "desc",  // Decending order
 			per_page: 5,   // 5 results per page
